@@ -1,0 +1,42 @@
+{
+    "Aneka Nasi": [{
+            "name": "Nasi Bebek Sambal Geprek",
+            "price": 25.000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate quasi nonveritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore, natus! Fuga nulla ducimus inventore rem?",
+            "discount": 0.5
+        },
+        {
+            "name": "Nasi Bebek Sambal Ijo",
+            "price": 25.000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate quasi nonveritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore, natus! Fuga nulla ducimus inventore rem?",
+            "discount": 0.5
+        },
+        {
+            "name": "Nasi Pecel Lele Sambal",
+            "price": 15.000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate quasi nonveritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore, natus! Fuga nulla ducimus inventore rem?",
+            "discount": 0.2
+        }
+    ],
+
+    "Cemilan": [{
+            "name": "French Fries",
+            "price": 10.000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate quasi nonveritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore, natus! Fuga nulla ducimus inventore rem?",
+            "discount": 0
+        },
+        {
+            "name": "Tahu Mercon",
+            "price": 10.000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate quasi nonveritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore, natus! Fuga nulla ducimus inventore rem?",
+            "discount": 0
+        },
+        {
+            "name": "Dimsum Isi 3",
+            "price": 15.000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate quasi nonveritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore, natus! Fuga nulla ducimus inventore rem?",
+            "discount": 0.5
+        }
+    ]
+
+}

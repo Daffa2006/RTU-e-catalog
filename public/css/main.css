@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-primaryRed: #FF2E2E;
+    --color-light: #FFFFFF;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+     
+      .swiper {
+        max-width: 100%;
+      max-height: 100%;
+   
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+       
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        
+      }
+      
+    
+    
+@media only screen and  (max-width: 768px) {
+    .swiper-pagination-bullet {
+      width: 8px !important;
+      height: 8px !important;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0);
+      opacity: 1 !important ;
+      background: #ECECEC !important;
+      transform: scale(0.5);
+      padding: 8px !important;
+    }
+
+}
+
+
+.swiper-pagination-bullet {
+      width: 16px !important;
+      height: 16px !important;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0);
+      opacity: 1 !important ;
+      background: #ECECEC !important;
+      margin: 8px !important;
+    }
+
+      .swiper-pagination-bullet-active {
+
+        color: rgba(255, 255, 255, 0);
+        background:#FF2E2E !important;
+       
+      }
+      
+      .shadow--nav {
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+      }
+
+      @media (min-width: 768px) {
+        .shadow--nav {
+         
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+      
+      .catalog-img {
+       box-shadow: 4px 4px 8px rgba(165, 166, 246, 0.2);
+       
+      }
+
+      .catalog__list {
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+      }
+
+      .selected {
+        background-color: var(--color-primaryRed) !important;
+       color: var(--color-light) !important;
+
+      }
+
+      .mobile-footer__pop-up {
+        filter: drop-shadow(1px 4px 12px rgba(0, 0, 0, 0.25));
+      }
+
+
+    /* page Details */
+
+    .select-gallery {
+      filter: drop-shadow(0px 1px 12px rgba(0, 0, 0, 0.12));
+
+    }
+      
+    /* CTA Button customer */
+
+    .disappear {
+     
+      transform: scale(1) rotate(0deg);
+      animation: disappear 0.5s forwards ease-in-out;
+    }
+
+    @keyframes disappear {
+      from {
+      
+        opacity: 1;
+        transform: scale(1) rotate(0deg) ;
+      }
+      to {
+        
+        opacity: 0;
+        transform: scale(0) rotate(90deg) ;
+      }
+    }
+
+    .appear {
+      opacity: 0;
+      transform: scale(0) rotate(-90deg) ;
+      animation: appear 0.5s forwards ease-in-out;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: scale(0) rotate(-90deg) ;
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg) ;
+      }
+    }
+
+    /* list of services */
+    .showWhatsapp {
+      bottom: 64px;
+      animation: showWhatList64px 0.5s forwards ease-in-out;
+    }
+
+    @media (min-width: 768px) { 
+      .showWhatsapp {
+        bottom: 40px;
+      animation: showWhatListDeskpx 0.5s forwards ease-in-out;
+      }
+    }
+    @keyframes showWhatList64px {
+      from{bottom: 64px;}
+      to{bottom: 124px;}
+    }
+    @keyframes showWhatListDeskpx {
+      from{bottom: 40px;}
+      to{bottom: 120px;}
+    }
+    /* list message */
+    .showMessage {
+      bottom: 64px;
+      animation: showMsgList64px 0.5s forwards ease-in-out;
+    }
+    @media (min-width: 768px) { 
+      .showMessage {
+        bottom: 40px;
+        animation: showMsgList40px 0.5s forwards ease-in-out;
+      }
+    }
+      @keyframes showMsgList64px {
+        from{bottom: 64px;}
+        to{bottom: 184px;}
+      }
+      @keyframes showMsgList40px {
+        from{bottom: 40px;}
+        to{bottom: 200px;}
+      }
+
+    .hideWhatsapp {
+      bottom: 124px;
+      animation: hideWhatList144px 0.5s forwards ease-in-out;
+    }
+
+    @media (min-width: 768px) { 
+      .hideWhatsapp {
+        bottom: 120px;
+        animation: hideWhatListDeskpx 0.5s forwards ease-in-out;
+      }
+    }
+      @keyframes hideWhatList144px {
+        from{bottom: 124px;}
+        to{bottom: 64px;}
+      }
+
+      @keyframes hideWhatListDeskpx {
+      from{bottom: 120px;}
+      to{bottom: 40px;}
+     }
+
+     
+     .hideMessage {
+      bottom: 180px;
+      animation: hideMsgList144px 0.5s forwards ease-in-out;
+    }
+
+    @media (min-width: 768px) { 
+      .hideMessage {
+        bottom: 200px;
+        animation: hideMsgListDeskpx 0.5s forwards ease-in-out;
+      }
+    }
+      @keyframes hideMsgList144px {
+        from{bottom: 184px;}
+        to{bottom: 64px;}
+      }
+
+      @keyframes hideMsgListDeskpx {
+      from{bottom: 200px;}
+      to{bottom: 40px;}
+     }
+     .slider::-webkit-scrollbar {
+      display: none;
+     }
+     .active {
+      background: rgba(255,255,255,0.3);
+      cursor: grabbing;
+      cursor: -webkit-grabbing;
+      transform: scale(1);
+    }
+
+    
+
+    /* gallery selection | details.html */
+    .selected-gallery {
+      border: 3px solid salmon;
+      filter: drop-shadow(0px 3px 7px  #f88787);
+    }
+
+    /* hovering gallery selection */
+    /* .hover--scale-opacity {
+     
+      transform: scale(1);
+    }
+    .hover--scale-opacity:hover {
+    opacity: 0;
+    transform: scale(1);
+     animation: fade-in-out 0.5s forwards ;
+     transition: scale 0.3
+    } */
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: scale(1);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1.25);
+      }
+    }
+
+    @keyframes fade-in-2 {
+      from {
+        opacity: 0.5;
+      
+      }
+      to {
+        opacity: 1;
+       
+      }
+    }
+
+    @keyframes fade-out {
+      from {
+        opacity: 1;
+        transform: scale(1.25);
+      }
+      to {
+        opacity: 0;
+        transform: scale(1);
+      }
+    }
