@@ -4,6 +4,12 @@
     --color-primaryRed: #FF2E2E;
     --color-light: #FFFFFF;
 }
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button,
+input[type='number'] {
+  appearance: none;
+  margin: 0;
+}
 
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;

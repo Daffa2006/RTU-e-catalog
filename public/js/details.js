@@ -24,7 +24,7 @@ function detailsEL({fields:{deskripsi, diskon, foto, harga, detail, nama}, sys})
             </div>
           
             <div
-                class="list-selection-gallery overflow-scroll flex md:justify-start md:gap-x-[20px] gap-x-[34.67px]   pt-2 pb-4 pl-4">
+                class="list-selection-gallery overflow-x-scroll flex md:justify-start md:gap-x-[20px] gap-x-[34.67px]   pt-2 pb-4 pl-4">
                 ${foto.map(f => {
                   return `<img class="select-gallery  bg-gray-900 hover--scale-opacity rounded-[4px] w-[56px] h-[56px] object-cover shrink-0"
                 src="${f.fields.file.url}" alt="${f.fields.description}">`
@@ -54,7 +54,7 @@ function detailsEL({fields:{deskripsi, diskon, foto, harga, detail, nama}, sys})
                                 <i class="cursor-pointer fa-solid fa-minus font-semibold md:text-sm text-xs"></i>
                           </button>
                             <div class="w-2/4 border-x-[1px] border-x-primaryDark">
-                                <input value="1" class="input-jumlah text-center h-96 jumlah-items w-full md:text-sm text-xs font-medium ">
+                                <input type="number" value="1" class="input-jumlah text-center h-96 jumlah-items w-full md:text-sm text-xs font-medium appearance-none ">
                             </div>
                             <button type="button" class="tambah w-1/4" aria-label="Tambah 1">
                                 <i class="w-1/4 cursor-pointer fa-solid fa-plus font-semibold md:text-sm text-xs text-darkRed"></i>
@@ -117,14 +117,15 @@ function detailsEL({fields:{deskripsi, diskon, foto, harga, detail, nama}, sys})
         <section id="product-desc" class="mt-4 md:col-span-9">
             <div class="md:px-0 flex flex-col  px-4 w-full">
                 <!-- Products Details -->
-                <span class="md:text-sm  bg-secondaryLight font-medium text-sm text-primaryDark px-[10px] py-1 ">Detail
-                    Produk</span>
-                <div class="flex flex-col h-[85px] justify-around">
-                <pre
-                    class="md:text-sm  font-montserrat md:col-span-12  px-[10px] text-xs font-medium text-primaryDark  whitespace-pre-line pt-[10px] ">
-              ${detail}
-                </pre>
-                </div>
+                ${detail === undefined ? '' : `<span class="md:text-sm  bg-secondaryLight font-medium text-sm text-primaryDark px-[10px] py-1 ">Detail
+                Produk</span>
+            <div class="flex flex-col h-[85px] justify-around">
+            <pre
+                class="md:text-sm  font-montserrat md:col-span-12  px-[10px] text-xs font-medium text-primaryDark  whitespace-pre-line pt-[10px] ">
+          ${detail}
+            </pre>
+            </div>` }
+                
 
                 <!-- Product Description -->
                 <span
@@ -182,14 +183,25 @@ function inputJumlah () {
     const tambah = document.querySelector('.tambah');
     const kurang = document.querySelector('.kurang');
     console.log(input)
- 
-    tambah.addEventListener('click', () => {
+    input.addEventListener('input', (e) => {
+        console.log(e)
+        if (e.target.value >= 69) {
+           e.target.value = 69;
+        }
+    })
     
+    tambah.addEventListener('click', () => {
      input.value = parseInt(input.value) + 1;
+     if (parseInt(input.value) >= 69) {
+        input.value = 69;
+     }
     })
 
     kurang.addEventListener('click', () => {
         input.value = parseInt(input.value) - 1;
+        if (parseInt(input.value) <= 1) {
+            input.value = 1;
+         }
     })
 }
 
@@ -213,4 +225,6 @@ async function details() {
 
 // run details
 details()
+
+
 
