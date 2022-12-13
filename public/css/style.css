@@ -1418,11 +1418,6 @@ video {
   background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1460,19 +1455,9 @@ video {
   fill: #5D5D5D;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-3 {
@@ -1626,6 +1611,10 @@ video {
 
 .pt-\[10px\] {
   padding-top: 10px;
+}
+
+.pt-\[26px\] {
+  padding-top: 26px;
 }
 
 .pt-6 {
@@ -2300,6 +2289,10 @@ video {
 
   .md\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .md\:pt-\[42px\] {
+    padding-top: 42px;
   }
 
   .md\:pl-10 {
