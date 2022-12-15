@@ -16,7 +16,7 @@ return client.getEntry(itemid)
 }
 
 // Detail product elements
-function detailsEL({fields:{deskripsi, diskon, foto, harga, detail, nama}, sys}) {  
+function detailsEL({fields:{deskripsi, diskon, foto, harga, detail, nama, jumlah}, sys}) {  
     return `
     <section id="image-gallery" class=" flex flex-col col-span-5">
             <div>
@@ -44,7 +44,7 @@ function detailsEL({fields:{deskripsi, diskon, foto, harga, detail, nama}, sys})
                         <span class="md:text-sm text-xs font-medium text-primaryDark shrink-0">Atur Jumlah</span>
                         <div class="flex justify-end w-full gap-x-4">
                             <span class="md:text-sm  text-xs font-medium text-primaryDark">Tersisa</span>
-                            <span class="md:text-sm  text-xs font-bold text-primaryDark ">69</span>
+                            <span class="jumlah-barang md:text-sm  text-xs font-bold text-primaryDark ">${jumlah}</span>
                         </div>
                     </div>
                     <div class="md:gap-y-4  md:flex-col flex flex-row gap-y-2 pb-4">
@@ -63,7 +63,8 @@ function detailsEL({fields:{deskripsi, diskon, foto, harga, detail, nama}, sys})
                         </div>
                         <div class="flex md:justify-between justify-end w-full gap-x-2">
                             <span class="md:text-sm  text-xs font-medium text-primaryDark">Subtotal</span>
-                            <span class="md:text-sm  text-xs font-medium text-darkRed">Rp 690.420</span>
+                            <span class="md:text-sm  text-xs font-medium text-darkRed">Rp <span class="subtotal">${harga}</span></span>
+                            <input type="hidden" class="harga-awal" value="${harga}">
                         </div>
                     </div>
                 </div>
@@ -179,29 +180,35 @@ let firstGallery = document.querySelector('.select-gallery:first-child')
 }
 
 function inputJumlah () {
-    let input = document.querySelector('.input-jumlah')
+    let input = document.querySelector('.input-jumlah');
+    let jumlah = document.querySelector('.jumlah-barang');
+    let subtotal = document.querySelector('.subtotal');
+    const hargaAwal = document.querySelector('.harga-awal');
     const tambah = document.querySelector('.tambah');
     const kurang = document.querySelector('.kurang');
-    console.log(input)
     input.addEventListener('input', (e) => {
-        console.log(e)
-        if (e.target.value >= 69) {
-           e.target.value = 69;
+        if (parseInt(e.target.value) >= parseInt(jumlah.textContent)) {
+           e.target.value = parseInt(jumlah.textContent);
         }
     })
     
     tambah.addEventListener('click', () => {
-     input.value = parseInt(input.value) + 1;
-     if (parseInt(input.value) >= 69) {
-        input.value = 69;
+        input.value = parseInt(input.value) + 1;
+     if (parseInt(input.value) >= parseInt(jumlah.textContent)) {
+        console.log(jumlah.textContent)
+        input.value = parseInt(jumlah.textContent);
      }
+        
+        subtotal.textContent = parseInt(hargaAwal.value) * parseInt(input.value)
     })
 
     kurang.addEventListener('click', () => {
-        input.value = parseInt(input.value) - 1;
-        if (parseInt(input.value) <= 1) {
+       input.value = parseInt(input.value) - 1;
+        if (parseInt(input.value) < 1) {
             input.value = 1;
-         }
+        }
+         subtotal.textContent = parseInt(hargaAwal.value) * parseInt(input.value)
+
     })
 }
 

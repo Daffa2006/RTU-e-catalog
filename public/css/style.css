@@ -1215,10 +1215,6 @@ video {
   overflow-x: scroll;
 }
 
-.overscroll-none {
-  overscroll-behavior: none;
-}
-
 .text-ellipsis {
   text-overflow: ellipsis;
 }
