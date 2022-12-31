@@ -4,6 +4,16 @@
     --color-primaryRed: #FF2E2E;
     --color-light: #FFFFFF;
 }
+
+.list-selection-gallery {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.list-selection-gallery::-webkit-scrollbar { 
+  display: none;
+  opacity: 0;  /* Safari and Chrome */
+}
+
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button,
 input[type='number'] {

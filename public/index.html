@@ -1,305 +1,255 @@
  <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <title>RTU</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+     <title>RTU</title>
+     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-</head>
+ </head>
 
-<body class="main-page font-montserrat">
-    <!-- The Navbar -->
+ <body class="main-page font-montserrat">
+     <!-- The Navbar -->
 
-    <nav id="navbar" class="shadow--nav shadow--nav-mobile w-full  flex  justify-around items-center p-3 fixed z-50 md:bg-black/60 md:backdrop-blur-[5px] bg-primaryRed">
+     <nav id="navbar"
+         class="shadow--nav shadow--nav-mobile w-full  flex  justify-around items-center p-3 fixed z-50 md:bg-black/60 md:backdrop-blur-[5px] bg-primaryRed">
 
-        <a href="#home">
-            <!-- <img class="  block  w-[85px] h-auto md:w-[120.95px] md:h-auto" src="img/rtu-merah.svg" alt=""
+         <a href="#home">
+             <!-- <img class="  block  w-[85px] h-auto md:w-[120.95px] md:h-auto" src="img/rtu-merah.svg" alt=""
                 class="logo"> -->
-                <svg class="logo md:fill-primaryRed fill-light md:w-[120.95px] md:h-[40px] w-[68.45px] h-9"  viewBox="0 0 121 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M102.2 0.0938967C104.638 0.751174 106.701 1.50235 106.232 3.00469L99.6685 26.5728C98.2621 30.6103 95.168 33.4272 87.8546 33.1455C82.5101 33.0516 79.9786 31.0798 80.1661 27.3239L86.7294 2.723C87.4795 1.31455 88.9797 0.751174 90.5736 0.0938967H4.59431C7.87596 1.50235 9.56367 3.47418 8.81358 6.38498L8.71981 6.76056H18.9398H34.3167C37.3171 6.94836 38.3485 8.73239 38.1609 11.0798C37.8797 14.2723 35.0668 16.7136 28.9723 17.1831H11.0638L16.502 15.493L16.5958 15.2113H6.56331L0 40H2.43779H15.5644C12.564 38.9671 11.2514 37.277 11.5327 35.0235L14.533 23.2864H22.3152C26.2532 23.8498 29.9099 30.5164 33.3791 40H46.9745L43.4116 37.3709C40.88 32.1127 37.7859 26.7606 33.6604 22.723C49.2248 20.8451 52.1314 10.3286 45.7556 3.84977L50.0687 6.85446H57.7571L48.9435 40H65.0705C61.6013 38.4038 60.1949 36.8075 61.0387 34.1784L68.1646 6.76056H79.7911L74.4467 9.10798L70.2274 26.0094C69.5711 35.3991 75.8531 39.6244 87.292 39.9061C110.826 40.7512 111.107 24.1315 116.827 2.62911C117.483 1.40845 119.265 0.751174 120.952 0H102.2V0.0938967Z" />
-                </svg>
-            </a>
+             <svg class="logo md:fill-primaryRed fill-light md:w-[120.95px] md:h-[40px] w-[68.45px] h-9"
+                 viewBox="0 0 121 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path
+                     d="M102.2 0.0938967C104.638 0.751174 106.701 1.50235 106.232 3.00469L99.6685 26.5728C98.2621 30.6103 95.168 33.4272 87.8546 33.1455C82.5101 33.0516 79.9786 31.0798 80.1661 27.3239L86.7294 2.723C87.4795 1.31455 88.9797 0.751174 90.5736 0.0938967H4.59431C7.87596 1.50235 9.56367 3.47418 8.81358 6.38498L8.71981 6.76056H18.9398H34.3167C37.3171 6.94836 38.3485 8.73239 38.1609 11.0798C37.8797 14.2723 35.0668 16.7136 28.9723 17.1831H11.0638L16.502 15.493L16.5958 15.2113H6.56331L0 40H2.43779H15.5644C12.564 38.9671 11.2514 37.277 11.5327 35.0235L14.533 23.2864H22.3152C26.2532 23.8498 29.9099 30.5164 33.3791 40H46.9745L43.4116 37.3709C40.88 32.1127 37.7859 26.7606 33.6604 22.723C49.2248 20.8451 52.1314 10.3286 45.7556 3.84977L50.0687 6.85446H57.7571L48.9435 40H65.0705C61.6013 38.4038 60.1949 36.8075 61.0387 34.1784L68.1646 6.76056H79.7911L74.4467 9.10798L70.2274 26.0094C69.5711 35.3991 75.8531 39.6244 87.292 39.9061C110.826 40.7512 111.107 24.1315 116.827 2.62911C117.483 1.40845 119.265 0.751174 120.952 0H102.2V0.0938967Z" />
+             </svg>
+         </a>
 
-        <form action="" class="md:w-1/2 w-1/2 relative flex items-center ">
-            <label for="search">
-                <!-- <img class="w-[12.5px] h-[12.5px] md:w-[18.75px] md:h-[18.75px] absolute z-10 ml-[17.75px] top-[50%] translate-y-[-50%] translate-x-[-3%] fill-secondaryRed "
+         <form action="" class="md:w-1/2 w-1/2 relative flex items-center ">
+             <label for="search">
+                 <!-- <img class="w-[12.5px] h-[12.5px] md:w-[18.75px] md:h-[18.75px] absolute z-10 ml-[17.75px] top-[50%] translate-y-[-50%] translate-x-[-3%] fill-secondaryRed "
                     src="img/search-icon.svg" alt="search-icon"> -->
-                    <svg  class="search-icon md:fill-secondaryRed fill-primaryDark md:w-[18.75px] md:h-[18.75px] w-[12.5px] h-[12.5px] absolute z-10 ml-[18.63px] top-[50%] translate-y-[-50%] " viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.3187 18.0273L13.232 11.9406C14.1766 10.7195 14.6875 9.22656 14.6875 7.65625C14.6875 5.77656 13.9539 4.01406 12.6273 2.68516C11.3008 1.35625 9.53359 0.625 7.65625 0.625C5.77891 0.625 4.01172 1.35859 2.68516 2.68516C1.35625 4.01172 0.625 5.77656 0.625 7.65625C0.625 9.53359 1.35859 11.3008 2.68516 12.6273C4.01172 13.9562 5.77656 14.6875 7.65625 14.6875C9.22656 14.6875 10.7172 14.1766 11.9383 13.2344L18.025 19.3187C18.0428 19.3366 18.064 19.3508 18.0874 19.3604C18.1107 19.3701 18.1357 19.3751 18.1609 19.3751C18.1862 19.3751 18.2112 19.3701 18.2345 19.3604C18.2578 19.3508 18.279 19.3366 18.2969 19.3187L19.3187 18.2992C19.3366 18.2814 19.3508 18.2602 19.3604 18.2369C19.3701 18.2135 19.3751 18.1885 19.3751 18.1633C19.3751 18.138 19.3701 18.113 19.3604 18.0897C19.3508 18.0664 19.3366 18.0452 19.3187 18.0273ZM11.3688 11.3688C10.375 12.3602 9.05781 12.9062 7.65625 12.9062C6.25469 12.9062 4.9375 12.3602 3.94375 11.3688C2.95234 10.375 2.40625 9.05781 2.40625 7.65625C2.40625 6.25469 2.95234 4.93516 3.94375 3.94375C4.9375 2.95234 6.25469 2.40625 7.65625 2.40625C9.05781 2.40625 10.3773 2.95 11.3688 3.94375C12.3602 4.9375 12.9062 6.25469 12.9062 7.65625C12.9062 9.05781 12.3602 10.3773 11.3688 11.3688Z" />
-                        </svg>
-            </label>
-            <input id="search"
-                class=" w-full px-9 py-1 md:px-16 md:py-[10px] md:text-base text-sm  md:bg-transparent bg-light md:border-2 md:border-primaryRed border-0 rounded-full md:placeholder-secondaryRed placeholder-primaryDark focus-within:outline-none "
-                type="text" name="search" placeholder="Search Here" autocomplete="off" arial-label="Search Here">
-        </form>
+                 <svg class="search-icon md:fill-secondaryRed fill-primaryDark md:w-[18.75px] md:h-[18.75px] w-[12.5px] h-[12.5px] absolute z-10 ml-[18.63px] top-[50%] translate-y-[-50%] "
+                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                         d="M19.3187 18.0273L13.232 11.9406C14.1766 10.7195 14.6875 9.22656 14.6875 7.65625C14.6875 5.77656 13.9539 4.01406 12.6273 2.68516C11.3008 1.35625 9.53359 0.625 7.65625 0.625C5.77891 0.625 4.01172 1.35859 2.68516 2.68516C1.35625 4.01172 0.625 5.77656 0.625 7.65625C0.625 9.53359 1.35859 11.3008 2.68516 12.6273C4.01172 13.9562 5.77656 14.6875 7.65625 14.6875C9.22656 14.6875 10.7172 14.1766 11.9383 13.2344L18.025 19.3187C18.0428 19.3366 18.064 19.3508 18.0874 19.3604C18.1107 19.3701 18.1357 19.3751 18.1609 19.3751C18.1862 19.3751 18.2112 19.3701 18.2345 19.3604C18.2578 19.3508 18.279 19.3366 18.2969 19.3187L19.3187 18.2992C19.3366 18.2814 19.3508 18.2602 19.3604 18.2369C19.3701 18.2135 19.3751 18.1885 19.3751 18.1633C19.3751 18.138 19.3701 18.113 19.3604 18.0897C19.3508 18.0664 19.3366 18.0452 19.3187 18.0273ZM11.3688 11.3688C10.375 12.3602 9.05781 12.9062 7.65625 12.9062C6.25469 12.9062 4.9375 12.3602 3.94375 11.3688C2.95234 10.375 2.40625 9.05781 2.40625 7.65625C2.40625 6.25469 2.95234 4.93516 3.94375 3.94375C4.9375 2.95234 6.25469 2.40625 7.65625 2.40625C9.05781 2.40625 10.3773 2.95 11.3688 3.94375C12.3602 4.9375 12.9062 6.25469 12.9062 7.65625C12.9062 9.05781 12.3602 10.3773 11.3688 11.3688Z" />
+                 </svg>
+             </label>
+             <input id="search"
+                 class=" w-full px-9 py-1 md:px-16 md:py-[10px] md:text-base text-sm  md:bg-transparent bg-light md:border-2 md:border-primaryRed border-0 rounded-full md:placeholder-secondaryRed placeholder-primaryDark focus-within:outline-none "
+                 type="text" name="search" placeholder="Search Here" autocomplete="off" arial-label="Search Here">
+         </form>
 
-        <a href="keranjang.html">
-            <svg  class="cart-icon md:fill-primaryRed fill-light md:w-[36.28px] md:h-[35px] w-7 h-7 "   viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.5 35.0005C13.8807 35.0005 15 33.8812 15 32.5005C15 31.1198 13.8807 30.0005 12.5 30.0005C11.1193 30.0005 10 31.1198 10 32.5005C10 33.8812 11.1193 35.0005 12.5 35.0005Z" />
-                <path d="M30 35.0005C31.3807 35.0005 32.5 33.8812 32.5 32.5005C32.5 31.1198 31.3807 30.0005 30 30.0005C28.6193 30.0005 27.5 31.1198 27.5 32.5005C27.5 33.8812 28.6193 35.0005 30 35.0005Z" />
-                <path d="M35 6.25025H7.275L6.25 1.00025C6.19156 0.713659 6.03447 0.456632 5.80607 0.273914C5.57767 0.0911957 5.29243 -0.00564311 5 0.000254299H0V2.50025H3.975L8.75 26.5003C8.80844 26.7868 8.96553 27.0439 9.19393 27.2266C9.42233 27.4093 9.70757 27.5061 10 27.5003H32.5V25.0003H11.025L10 20.0003H32.5C32.789 20.0073 33.0714 19.914 33.2993 19.7363C33.5272 19.5585 33.6865 19.3072 33.75 19.0253L36.25 7.77525C36.2919 7.58979 36.2909 7.3972 36.2471 7.21217C36.2034 7.02713 36.118 6.85452 35.9975 6.70747C35.8769 6.56041 35.7244 6.4428 35.5516 6.36357C35.3787 6.28434 35.1901 6.24558 35 6.25025ZM31.5 17.5003H9.525L7.775 8.75025H33.4375L31.5 17.5003Z" />
-                </svg>                
-        </a>
+         <a href="keranjang.html">
+             <svg class="cart-icon md:fill-primaryRed fill-light md:w-[36.28px] md:h-[35px] w-7 h-7 "
+                 viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path
+                     d="M12.5 35.0005C13.8807 35.0005 15 33.8812 15 32.5005C15 31.1198 13.8807 30.0005 12.5 30.0005C11.1193 30.0005 10 31.1198 10 32.5005C10 33.8812 11.1193 35.0005 12.5 35.0005Z" />
+                 <path
+                     d="M30 35.0005C31.3807 35.0005 32.5 33.8812 32.5 32.5005C32.5 31.1198 31.3807 30.0005 30 30.0005C28.6193 30.0005 27.5 31.1198 27.5 32.5005C27.5 33.8812 28.6193 35.0005 30 35.0005Z" />
+                 <path
+                     d="M35 6.25025H7.275L6.25 1.00025C6.19156 0.713659 6.03447 0.456632 5.80607 0.273914C5.57767 0.0911957 5.29243 -0.00564311 5 0.000254299H0V2.50025H3.975L8.75 26.5003C8.80844 26.7868 8.96553 27.0439 9.19393 27.2266C9.42233 27.4093 9.70757 27.5061 10 27.5003H32.5V25.0003H11.025L10 20.0003H32.5C32.789 20.0073 33.0714 19.914 33.2993 19.7363C33.5272 19.5585 33.6865 19.3072 33.75 19.0253L36.25 7.77525C36.2919 7.58979 36.2909 7.3972 36.2471 7.21217C36.2034 7.02713 36.118 6.85452 35.9975 6.70747C35.8769 6.56041 35.7244 6.4428 35.5516 6.36357C35.3787 6.28434 35.1901 6.24558 35 6.25025ZM31.5 17.5003H9.525L7.775 8.75025H33.4375L31.5 17.5003Z" />
+             </svg>
+         </a>
 
-    </nav>
+     </nav>
+<main>
+     <section id="home" class="relative">
+         <!-- Swiper -->
 
-    <section id="home" class="relative ">
-        <!-- Swiper -->
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper relative   ">
-                <div class="swiper-slide"><img  src="img/xiaomi-redmi-a1-75.webp"
-                        alt="">
-                    <span class="block absolute z-30 bg-black/20  w-full h-full">
-                    </span>
-                </div>
-
-                <div class="swiper-slide"><img  src="img/xiaomi-redmi-a1-75.webp"
-                    alt="">
-                <span class="block absolute z-30 bg-black/20  w-full h-full">
-                </span>
-            </div>
-              
-
-            </div>
-
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <section id="catalog" class=" mt-6   flex justify-center flex-col">
-        <header class="flex justify-between items-center md:pl-10 pl-4 px-10 md:py-5 pt-6 pb-4">
-            <span class=" text-primaryDark font-bold md:text-3xl text-2xl">Catalog</span>
-            <a href="catalog.html" class="text-link font-medium md:text-base text-xs md:pr-10  ">Lihat selengkapnya</a>
-        </header>
-        <div id="catalog-category" class="slider md:pl-10 pl-4 py-4 overflow-x-scroll w-full flex gap-x-2">
-
-          
-        </div>
-
-        <!-- Catalog List Wrapper -->
-        <div  class="catalog-list-container slider flex flex-row overflow-x-scroll py-4   gap-x-2 md:pl-10 pl-4">
-            <!-- <div
-                class="slider-inner md:w-[386px] md:h-full md:max-h-[278px] h-[265px] w-[183px] catalog__list group relative shrink-0 rounded-xl md:bg-transparent bg-light  overflow-hidden box-border">
+         <div class="swiper mySwiper">
+             <div class="banner-container swiper-wrapper relative   ">
                 
-                <img class="
-    md:p-0  md:w-[386px] md:h-[278px] h-[126px] w-full px-1 py-2 block object-cover rounded-xl "
-                    src="img/Conro-bakar-warung-sebelah.webp" alt="drone-punya-abang-nathan">
+                 <!-- <div class="swiper-slide"><img src="img/xiaomi-redmi-a1-75.webp" alt="">
+                     <span class="block absolute z-30 bg-black/20  w-full h-full">
+                     </span>
+                 </div> -->
+             </div>
+             <div class="swiper-pagination"></div>
+         </div>
+     </section>
 
-            
-                <div class="md:block hidden group">
-                    <div
-                        class=" flex group-hover:opacity-100 opacity-0 group-hover:bg-black/60 ease-in-out duration-300 absolute inset-0 z-40  flex-col justify-end pb-[39.5px] px-[18px] after:content-[''] after:right-0 after:left-0 after:bottom-0 after:top-48 after:absolute after:bg-gradient-to-t after:from-black after:via-black/60 after:to-transparent">
-                        <div class="flex justify-between">
-                            <span class="px-3 pb-2 text-light text-lg font-bold ">Conro bakar warung sebelah</span>
+     <section id="catalog" class=" mt-6   flex justify-center flex-col">
+         <header class="flex justify-between items-center md:pl-10 pl-4 px-10 md:py-5 pt-6 pb-4">
+             <span class=" text-primaryDark font-bold md:text-3xl text-2xl">Catalog</span>
+             <a href="catalog.html" class="text-link font-medium md:text-base text-xs md:pr-10  ">Lihat selengkapnya</a>
+         </header>
+         <div id="catalog-category" class="slider md:pl-10 pl-4 py-4 overflow-x-scroll w-full flex gap-x-2">
 
-                            <div class="flex flex-col shrink-0">
-                                <span class="px-3 text-light text-lg font-medium ">Rp 50.200</span>
-                                <span class="px-3 text-link text-xs text-right font-medium line-through">Rp
-                                    80.400</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center shrink-0 ">
-                            <p class=" max-w-[231px] px-3 text-light text-xs font-medium">Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate quasi non
-                                veritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore, natus!
-                                Fuga nulla ducimus inventore rem?
-                            </p>
-                            <img class="mx-3 w-[54px] h-[48px]" src="img/add-to-cart.svg" alt="">
-                        </div>
-                    </div>
-                </div>
 
-             Catalog Desc Mobile 
-                <div
-                    class="md:hidden z-10 relative after:bg-gradient-to-t after:from-white after:via-white after:to-transparent after:absolute after:bottom-0 after:top-[90px] after:right-0  after:left-0 after:z-40 flex flex-col">
-                    <span class="catalog__desc-mobile px-3 text-primaryDark text-base font-bold">Rp 50.200 <br></span>
-                    <span class="px-3 text-primaryDark text-base font-bold ">Conro bakar warung sebelah</span>
-                    <p class="text-ellipsis px-3  text-primaryDark text-xs font-medium">Lorem ipsum, dolor sit amet
-                        consectetur
-                        adipisicing elit. Distinctio sapiente neque Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.</p>
+         </div>
 
-                </div>
-            </div> -->
-
+         <!-- Catalog List Wrapper -->
+         <div class="catalog-list-container slider flex flex-row overflow-hidden py-4   gap-x-2 md:pl-10 pl-4">
            
-        </div>
+         </div>
 
 
-        <!-- Promo Section -->
-        <section id="promo">
-            <header class="flex  items-center md:pl-10 px-4 md:py-5 pt-6 pb-4">
-                <span class=" text-primaryDark font-bold md:text-3xl text-2xl">PROMO!</span>
-                <span class="md:hidden bg-secondaryRed/50 ml-6 rounded-xl py-1 px-4 text-primaryRed font-bold text-sm whitespace-nowrap">29 - 31 Februari</span>
-            </header>
-            <div id="container-red"
-                class="w-full md:max-w-[425px] max-w-[196px]  md:h-[336px] h-[266px] bg-primaryRed flex  items-center gap-x-[10px] rounded-r-2xl  ">
-                <div id="container-red__img " class="flex flex-col ">
+         <!-- Promo Section -->
+         <section id="promo">
+             <header class="flex  items-center md:pl-10 px-4 md:py-5 pt-6 pb-4">
+                 <span class=" text-primaryDark font-bold md:text-3xl text-2xl">PROMO!</span>
+                 <span
+                     class="md:hidden bg-secondaryRed/50 ml-6 rounded-xl py-1 px-4 text-primaryRed font-bold text-sm whitespace-nowrap">29
+                     - 31 Februari</span>
+             </header>
+             <div id="container-red"
+                 class="w-full md:max-w-[425px] max-w-[196px]  md:h-[336px] h-[266px] bg-primaryRed flex  items-center gap-x-[10px] rounded-r-2xl  ">
+                 <div id="container-red__img " class="flex flex-col ">
 
-                    <div id="discount" class="flex flex-col items-center gap-x-[10px]">
-                        <div class="flex flex-col md:flex-row md:items-center pl-4 pr-[6px]">
-                            <div id="discount__slogan">
-                                <span class="font-black md:text-2xl text-base text-light">DISKON<br>SANTUY</span>
-                            </div>
-                            <div id="discount__num">
-                                <span class="font-bold md:text-[54px] text-4xl text-light  md:ml-[10px]">50%</span>
-                            </div>
-                        </div>
+                     <div id="discount" class="flex flex-col items-center gap-x-[10px]">
+                         <div class="flex flex-col md:flex-row md:items-center pl-4 pr-[6px]">
+                             <div id="discount__slogan">
+                                 <span class="font-black md:text-2xl text-base text-light">DISKON<br>SANTUY</span>
+                             </div>
+                             <div id="discount__num">
+                                 <span class="font-bold md:text-[54px] text-4xl text-light  md:ml-[10px]">50%</span>
+                             </div>
+                         </div>
 
-                        <span
-                            class="md:block md:mt-2 md:w-[203px]  md:text-center md:text-primaryDark md:text-lg md:p-2 bg-light md:rounded-2xl md:font-medium hidden">29
-                            - 31
-                            Februari</span>
+                         <span
+                             class="md:block md:mt-2 md:w-[203px]  md:text-center md:text-primaryDark md:text-lg md:p-2 bg-light md:rounded-2xl md:font-medium hidden">29
+                             - 31
+                             Februari</span>
 
-                    </div>
+                     </div>
 
-                </div>
-                <div id="container-red__img-container">
-                    <div
-                    class="md:w-[386px] md:h-full md:max-h-[278px] h-[265px] w-[183px] catalog__list group relative shrink-0 rounded-xl md:bg-transparent bg-light  overflow-hidden box-border">
-                    <img class="
+                 </div>
+                 <div id="container-red__img-container">
+                     <div
+                         class="md:w-[386px] md:h-full md:max-h-[278px] h-[265px] w-[183px] catalog__list group relative shrink-0 rounded-xl md:bg-transparent bg-light  overflow-hidden box-border">
+                         <img class="
             md:p-0  md:w-[386px] md:h-[278px] h-[126px] w-full px-1 py-2 block object-cover rounded-xl "
-                        src="img/Conro-bakar-warung-sebelah.webp" alt="drone-punya-abang-nathan">
-            
-                    <!-- Catalog Desc Hover/desktop-->
-                    <div class="md:block hidden group">
-                        <div
-                            class=" flex group-hover:opacity-100 opacity-0 group-hover:bg-black/60 ease-in-out duration-300 absolute inset-0 z-40  flex-col justify-end pb-[39.5px] px-[18px] after:content-[''] after:right-0 after:left-0 after:bottom-0 after:top-48 after:absolute after:bg-gradient-to-t after:from-black after:via-black/60 after:to-transparent">
-                            <div class="flex justify-between">
-                                <span class="px-3 pb-2 text-light text-lg font-bold ">Conro bakar warung sebelah</span>
-            
-                                <div class="flex flex-col shrink-0">
-                                    <span class="px-3 text-light text-lg font-medium ">Rp 50.200</span>
-                                    <span class="px-3 text-link text-xs text-right font-medium line-through">Rp
-                                        80.400</span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center shrink-0 ">
-                                <p class=" max-w-[231px] px-3 text-light text-xs font-medium">Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate quasi non
-                                    veritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore, natus!
-                                    Fuga nulla ducimus inventore rem?
-                                </p>
-                                <img class="mx-3 w-[54px] h-[48px]" src="img/add-to-cart.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!-- Catalog Desc Mobile -->
-                    <div
-                        class="md:hidden relative after:bg-gradient-to-t after:from-white after:via-white after:to-transparent after:absolute after:bottom-0 after:top-[90px] after:right-0  after:left-0  flex flex-col">
-                        <span class="catalog__desc-mobile px-3 text-primaryDark text-base font-bold">Rp 50.200 <br></span>
-                        <span class="px-3 text-primaryDark text-base font-bold ">Conro bakar warung sebelah</span>
-                        <p class="text-ellipsis px-3  text-primaryDark text-xs font-medium">Lorem ipsum, dolor sit amet
-                            consectetur
-                            adipisicing elit. Distinctio sapiente neque Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit.</p>
-            
-                    </div>
-                    </div>
+                             src="img/Conro-bakar-warung-sebelah.webp" alt="drone-punya-abang-nathan">
+
+                         <!-- Catalog Desc Hover/desktop-->
+                         <div class="md:block hidden group">
+                             <div
+                                 class=" flex group-hover:opacity-100 opacity-0 group-hover:bg-black/60 ease-in-out duration-300 absolute inset-0 z-40  flex-col justify-end pb-[39.5px] px-[18px] after:content-[''] after:right-0 after:left-0 after:bottom-0 after:top-48 after:absolute after:bg-gradient-to-t after:from-black after:via-black/60 after:to-transparent">
+                                 <div class="flex justify-between">
+                                     <span class="px-3 pb-2 text-light text-lg font-bold ">Conro bakar warung
+                                         sebelah</span>
+
+                                     <div class="flex flex-col shrink-0">
+                                         <span class="px-3 text-light text-lg font-medium ">Rp 50.200</span>
+                                         <span class="px-3 text-link text-xs text-right font-medium line-through">Rp
+                                             80.400</span>
+                                     </div>
+                                 </div>
+                                 <div class="flex justify-between items-center shrink-0 ">
+                                     <p class=" max-w-[231px] px-3 text-light text-xs font-medium">Lorem ipsum dolor sit
+                                         amet,
+                                         consectetur adipisicing elit. Aliquam, iusto natus debitis quas ipsa voluptate
+                                         quasi non
+                                         veritatis quidem cupiditate, vero inventore quo accusamus molestiae! Tempore,
+                                         natus!
+                                         Fuga nulla ducimus inventore rem?
+                                     </p>
+                                     <img class="mx-3 w-[54px] h-[48px]" src="img/add-to-cart.svg" alt="">
+                                 </div>
+                             </div>
+                         </div>
+
+                         <!-- Catalog Desc Mobile -->
+                         <div
+                             class="md:hidden relative after:bg-gradient-to-t after:from-white after:via-white after:to-transparent after:absolute after:bottom-0 after:top-[90px] after:right-0  after:left-0  flex flex-col">
+                             <span class="catalog__desc-mobile px-3 text-primaryDark text-base font-bold">Rp 50.200
+                                 <br></span>
+                             <span class="px-3 text-primaryDark text-base font-bold ">Conro bakar warung sebelah</span>
+                             <p class="text-ellipsis px-3  text-primaryDark text-xs font-medium">Lorem ipsum, dolor sit
+                                 amet
+                                 consectetur
+                                 adipisicing elit. Distinctio sapiente neque Lorem ipsum dolor sit amet consectetur,
+                                 adipisicing
+                                 elit.</p>
+
+                         </div>
+                     </div>
 
 
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="footer" class="block">
-            <div
-                class="w-full flex items-start lg:justify-start md:justify-evenly md:py-10 justify-between py-[18px] mt-6 px-16 border-[1px] border-t-primaryDark ">
-                <div class=" w-1/5 relative">
-                    <span class=" md:block md:text-sm hidden text-primaryDark font-bold">Email <br></span>
-                    <span class="md:block md:text-sm hidden text-primaryDark font-medium">rtuhebat@gmail.com
-                        <br>ownerrtu@gmail.com</span>
-                    <span class="md:hidden block text-sm mobile-footer__contact   font-bold  text-primaryDark">Email
-                        <br></span>
-                    <span
-                        class="popup hidden mobile-footer__pop-up mobile-footer__pop-up md:text-sm text-xs text-primaryDark font-medium
+                 </div>
+             </div>
+         </section>
+        </main>
+         <!-- Footer -->
+         <footer id="footer" class="block">
+             <div
+                 class="w-full flex items-start lg:justify-start md:justify-evenly md:py-10 justify-between py-[18px] mt-6 px-16 border-[1px] border-t-primaryDark ">
+                 <div class=" w-1/5 relative">
+                     <span class=" md:block md:text-sm hidden text-primaryDark font-bold">Email <br></span>
+                     <span class="md:block md:text-sm hidden text-primaryDark font-medium">rtuhebat@gmail.com
+                         <br>ownerrtu@gmail.com</span>
+                     <span class="md:hidden block text-sm mobile-footer__contact   font-bold  text-primaryDark">Email
+                         <br></span>
+                     <span
+                         class="popup hidden mobile-footer__pop-up mobile-footer__pop-up md:text-sm text-xs text-primaryDark font-medium
                     absolute top-[-84px]  bg-light
                     py-2 px-4 rounded-t-xl rounded-br-xl after:content-[''] after:w-0 after:h-0 after:border-t-light after:border-t-[20px] after:border-r-transparent after:border-r-[20px] after:bottom-[-18px] after:left-0 after:absolute ">rtuhebat@gmail.com
-                        <br>ownerrtu@gmail.com</span>
-                </div>
-                <div class="w-1/5 relative">
-                    <span class="md:block hidden md:text-sm   text-primaryDark font-bold">No. Telp <br></span>
-                    <span class="md:block hidden md:text-sm text-primaryDark font-medium">0838XXXXXXX
-                        <br>0812XXXXXXX</span>
+                         <br>ownerrtu@gmail.com</span>
+                 </div>
+                 <div class="w-1/5 relative">
+                     <span class="md:block hidden md:text-sm   text-primaryDark font-bold">No. Telp <br></span>
+                     <span class="md:block hidden md:text-sm text-primaryDark font-medium">0838XXXXXXX
+                         <br>0812XXXXXXX</span>
 
-                    <span
-                        class="md:hidden block text-sm mobile-footer__contact    text-primaryDark font-bold whitespace-nowrap ">No.
-                        Telp</span>
+                     <span
+                         class="md:hidden block text-sm mobile-footer__contact    text-primaryDark font-bold whitespace-nowrap ">No.
+                         Telp</span>
 
-                    <span
-                        class="popup hidden mobile-footer__pop-up md:text-sm text-xs text-primaryDark font-medium
+                     <span
+                         class="popup hidden mobile-footer__pop-up md:text-sm text-xs text-primaryDark font-medium
                     absolute top-[-84px]  bg-light
                     py-2 px-4 rounded-t-xl rounded-br-xl after:content-[''] after:w-0 after:h-0 after:border-t-light after:border-t-[20px] after:border-r-transparent after:border-r-[20px] after:bottom-[-18px] after:left-0 after:absolute ">0838XXXXXXX
-                        <br>0812XXXXXXX</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End footer -->
+                         <br>0812XXXXXXX</span>
+                 </div>
+             </div>
+         </footer>
+         <!-- End footer -->
 
-        <!-- CTA buttons | contact us -->
-        <div class="cta-button select-none">
+         <!-- CTA buttons | contact us -->
+         <div class="cta-button select-none">
 
 
-            <div class="cta-button__list">
-                <div
-                    class="cta-button__list__message fixed md:bottom-10 bottom-16  md:right-10 right-[22px] cursor-pointer z-30 md:w-[72px] md:h-[72px] w-[44px] h-[44px] bg-fadeRed  rounded-full flex items-center justify-center">
-                    <img class="md:w-auto md:-auto w-6 h-6" src="img/message-icon.svg" alt="message">
-                </div>
+             <div class="cta-button__list">
+                 <div
+                     class="cta-button__list__message fixed md:bottom-10 bottom-16  md:right-10 right-[22px]  z-30 md:w-[72px] md:h-[72px] w-[44px] h-[44px] bg-gray-400 cursor-not-allowed  rounded-full flex items-center justify-center">
+                     <img class="md:w-auto md:-auto w-6 h-6" src="img/message-icon.svg" alt="message">
+                 </div>
+                 <a href="https://api.whatsapp.com/send/?phone=6283847841279&text=Halo kantin RTU, saya ingin pesan&type=phone_number&app_absent=0" target="_blank">
+                 <div
+                     class="cta-button__list__whatsapp fixed md:bottom-10 bottom-16  md:right-10 right-[22px] cursor-pointer z-40 md:w-[72px] md:h-[72px] w-[44px] h-[44px] bg-fadeRed rounded-full flex items-center justify-center">
+                     <img class="md:w-auto md:-auto w-6 h-6" src="img/whatsapp-icon-stroke.svg" alt="whatsapp">
+                 </div>
+                </a>
 
-                <div
-                    class="cta-button__list__whatsapp fixed md:bottom-10 bottom-16  md:right-10 right-[22px] cursor-pointer z-40 md:w-[72px] md:h-[72px] w-[44px] h-[44px] bg-fadeRed rounded-full flex items-center justify-center">
-                    <img class="md:w-auto md:-auto w-6 h-6" src="img/whatsapp-icon-stroke.svg" alt="whatsapp">
-                </div>
+             </div>
 
-            </div>
+             <div
+                 class="  cta-button__customer md:w-[72px] md:h-[72px] w-[44px] h-[44px] fixed z-50 md:bottom-10 bottom-16 md:right-10 right-[22px] cursor-pointer bg-primaryRed rounded-full flex items-center justify-center">
+                 <img class="block md:w-auto md:h-auto w-6 h-6"  src="img/customer.svg" alt="contact-us">
 
-            <div
-                class="  cta-button__customer md:w-[72px] md:h-[72px] w-[44px] h-[44px] fixed z-50 md:bottom-10 bottom-16 md:right-10 right-[22px] cursor-pointer bg-primaryRed rounded-full flex items-center justify-center">
-                <img class="block md:w-auto md:h-auto w-6 h-6" src="img/customer.svg" alt="contact-us">
+             </div>
+             <div
+                 class=" flex cta-button__close md:w-[72px] md:h-[72px] w-[44px] h-[44px] fixed z-40 md:bottom-10 bottom-16 md:right-10 right-[22px] cursor-pointer bg-primaryRed rounded-full  items-center justify-center">
+                 <img class="md:w-auto md:h-auto w-4 h-4" src="img/close.svg" alt="contact-us">
+             </div>
+         </div>
+         <!-- end CTA buttons -->
+         
+         <script src="/node_modules/contentful/dist/contentful.browser.min.js"></script>
+         <script src="/node_modules/axios/dist/axios.min.js"></script>
+         <script src="js/index.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+         <script defer src="js/script.js"></script>
+         
+ </body>
 
-            </div>
-            <div
-                class=" flex cta-button__close md:w-[72px] md:h-[72px] w-[44px] h-[44px] fixed z-40 md:bottom-10 bottom-16 md:right-10 right-[22px] cursor-pointer bg-primaryRed rounded-full  items-center justify-center">
-                <img class="md:w-auto md:h-auto w-4 h-4" src="img/close.svg" alt="contact-us">
-            </div>
-        </div>
-        <!-- end CTA buttons -->
-        <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-        <script src="/node_modules/axios/dist/axios.min.js"></script>
-        <script  src="js/index.js"></script>
-        <script defer src="js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                lazy: true,
-                loop: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    //   dynamicBullets: true,
-                    renderBullet: function (index, className) {
-                        return "<span class=" + className + "></span>";
-                    },
-                },
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-            });
-        </script>
-</body>
-
-</html>
+ </html>
