@@ -4,8 +4,8 @@ const itemid = urlParams.get('itemid')
 console.log(itemid);
 
 let client = contentful.createClient({
-    space: 'yc2c74qk5e2y',
-    accessToken: 'g6mxTM8rR5Hk-1KokuoOEC7jPPP8-GcAQrQI6wLXXvM',
+    space: 'aiosl5ylywlg',
+    accessToken: 'NKQuUYUlmPCCyKbetjFQqgxEQ3mkKOZeFDNBuVVl9Oc',
 });
 
 // Fetch API
@@ -32,7 +32,7 @@ function detailsEL({
 <section class="flex md:flex-row md:justify-between flex-col ">
         <div id="image-gallery" class="flex flex-col"> 
             <div class="flex justify-center">
-                <img class="main-gallery md:max-w-[720px] md:max-h-[540px] w-full h-full object-cover" >
+                <img class="main-gallery md:max-w-[800px] md:max-h-[600px]  w-full h-full object-cover" >
             </div>
             <div
                 class="list-selection-gallery overflow-x-scroll flex md:justify-start md:gap-x-[20px] gap-x-[34.67px]   pt-2 pb-4 pl-4">
@@ -44,7 +44,7 @@ function detailsEL({
             </div>
         </div>
         
-    <div id="checkout" class="md:pl-8 px-4 md:w-[540px] w-full  h-auto ">
+    <div id="checkout" class="md:pl-8 px-4 md:w-[600px] w-full  h-auto ">
         <div id="checkout-border"
         class="md:p-4 py-4 md:rounded-2xl md:border-[1px] md:border-darkRed border-t-[1px] border-t-primaryRed">
         <header>

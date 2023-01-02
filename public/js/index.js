@@ -1,8 +1,13 @@
 
+// let client = contentful.createClient({
+//   space: 'yc2c74qk5e2y',
+//   accessToken: 'g6mxTM8rR5Hk-1KokuoOEC7jPPP8-GcAQrQI6wLXXvM',
+// });
+
 let client = contentful.createClient({
-  space: 'yc2c74qk5e2y',
-  accessToken: 'g6mxTM8rR5Hk-1KokuoOEC7jPPP8-GcAQrQI6wLXXvM',
-});
+    space: 'aiosl5ylywlg',
+    accessToken: 'NKQuUYUlmPCCyKbetjFQqgxEQ3mkKOZeFDNBuVVl9Oc',
+  });
 
 // fetch API
 function getProducts() {
@@ -164,6 +169,15 @@ function categoryDOM() {
   const categoryButtons = document.querySelectorAll('.category');
   const firstCategory = document.querySelector('.category')
   firstCategory.classList.add('selected')
+  async function selectedFirst () {
+    let filterBy = firstCategory.dataset.itemid;
+    console.log(filterBy)
+    let filteredItems = await getFilterProducts(filterBy);
+    console.log(filteredItems)
+    catalogUI(filteredItems)
+  }
+ selectedFirst()
+
   categoryButtons.forEach(function (categoryButton) {
     categoryButton.addEventListener('click', async function (e) {
       if (e.target.classList.contains('selected') === false) {
